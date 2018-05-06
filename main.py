@@ -22,7 +22,7 @@ ap_if.active(False)
 sta_if = network.WLAN(network.STA_IF)
 sta_if.active(True)
 sta_if.ifconfig(('192.168.0.200','255.255.255.0','192.168.0.1','8.8.8.8'))
-sta_if.connect('resurection','slackware8102')
+sta_if.connect('router_AP','password')
 
 #set the oled display
 hspi = SPI(-1, baudrate=1000000, polarity=1, phase=0, sck=Pin(14), mosi=Pin(13), miso=Pin(12))
